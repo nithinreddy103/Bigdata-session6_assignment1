@@ -1,0 +1,4 @@
+create database if not exists custom;
+create table temperature_data (date string,zipcode int,temperature int) row format delimited fields terminated by (,);
+load data local inpath '/home/acadgild/Downloads/dataset.txt' into table temperature_data; 
+select * from temperaute_data;
